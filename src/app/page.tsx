@@ -1,15 +1,10 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  BackpackIcon,
-  EnvelopeClosedIcon,
-  GitHubLogoIcon,
-  LinkedInLogoIcon,
-  PersonIcon,
-  TwitterLogoIcon,
-} from "@radix-ui/react-icons";
+import { BackpackIcon, PersonIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { DevToIcon } from "@/components/ui/icons";
+import TimelineContainer from "./_components/timeline-container";
+import FeaturedContainer from "./_components/featured-container";
+import SocialBar from "./_components/social-bar";
 
 export default function Home() {
   return (
@@ -47,29 +42,14 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="mt-2 flex gap-3">
-            <div className="bg-muted p-4 rounded-md w-fit flex items-center gap-5">
-              <LinkedInLogoIcon className="h-6 w-6" />
-              <GitHubLogoIcon className="h-6 w-6" />
-              <TwitterLogoIcon className="h-6 w-6" />
-              <DevToIcon className="h-7 w-7" />
-            </div>
-
-            <div className="bg-muted p-4 rounded-md w-fit flex items-center">
-              <EnvelopeClosedIcon className="h-5 w-5" />
-            </div>
-          </div>
+          <SocialBar />
         </div>
 
         <h3 className="mt-8 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase">
           Featured
         </h3>
 
-        <div className="flex flex-col gap-5">
-          <div className="bg-muted rounded-md min-h-16"></div>
-          <div className="bg-muted rounded-md min-h-16"></div>
-          <div className="bg-muted rounded-md min-h-16"></div>
-        </div>
+        <FeaturedContainer />
       </section>
 
       <section
@@ -80,14 +60,7 @@ export default function Home() {
           Timeline
         </h3>
 
-        <div
-          id="timeline-container"
-          className="grid grid-cols-2 auto-rows-[25vh] gap-5 min-h-3/4 mt-10 pr-1"
-        >
-          <div className="bg-muted rounded-md"></div>
-          <div className="bg-muted rounded-md"></div>
-          <div className="bg-muted rounded-md"></div>
-        </div>
+        <TimelineContainer />
       </section>
     </main>
   );
