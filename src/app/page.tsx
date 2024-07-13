@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { BackpackIcon, PersonIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import TimelineContainer from "./_components/timeline-container";
+import TimelineContainer from "./_components/timeline/container";
 import FeaturedContainer from "./_components/featured-container";
 import SocialBar from "./_components/social-bar";
 
@@ -17,17 +17,15 @@ export default function Home() {
 
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-5">
-            <h1 className="scroll-m-20 text-xl font-bold tracking-tight uppercase">
-              Param Birje
-            </h1>
+            <h1 className="scroll-m-20 text-xl font-bold tracking-tight uppercase">Param Birje</h1>
 
             <Badge variant="secondary">Something @ SomeCompany.co</Badge>
           </div>
 
           <p className="leading-7 text-muted-foreground w-1/2">
-            Once upon a time, in a far-off land, there was a very lazy king who
-            spent all day lounging on his throne. One day, his advisors came to
-            him with a problem: the kingdom was running out of money.
+            Once upon a time, in a far-off land, there was a very lazy king who spent all day
+            lounging on his throne. One day, his advisors came to him with a problem: the kingdom
+            was running out of money.
           </p>
 
           <div className="mt-2 flex items-center gap-3">
@@ -52,10 +50,7 @@ export default function Home() {
         <FeaturedContainer />
       </section>
 
-      <section
-        id="home-right"
-        className="overflow-y-auto overflow-x-hidden w-1/2 no-scrollbar"
-      >
+      <section id="home-right" className="overflow-y-auto overflow-x-hidden w-1/2 no-scrollbar">
         <h3 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl uppercase">
           Timeline
         </h3>
