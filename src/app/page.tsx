@@ -43,7 +43,7 @@ export default function Home() {
           <SocialBar />
         </div>
 
-        <h3 className="mt-8 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase">
+        <h3 className="mt-8 mb-3 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase">
           Featured
         </h3>
 
