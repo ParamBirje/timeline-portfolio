@@ -1,5 +1,5 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { BackpackIcon, PersonIcon } from "@radix-ui/react-icons";
+import { BackpackIcon, Component1Icon, PersonIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import TimelineContainer from "./_components/timeline/container";
@@ -46,8 +46,8 @@ export default function Home() {
 
         <Card className="mt-3">
           <CardHeader>
-            <h3 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase">
-              Featured
+            <h3 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase flex items-center">
+              <Component1Icon className="h-9 w-9 mr-4" /> Featured
             </h3>
           </CardHeader>
           <CardContent>
