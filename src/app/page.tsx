@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import TimelineContainer from "./_components/timeline/container";
 import FeaturedContainer from "./_components/featured/container";
 import SocialBar from "./_components/social-bar";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -43,11 +44,16 @@ export default function Home() {
           <SocialBar />
         </div>
 
-        <h3 className="mt-8 mb-3 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase">
-          Featured
-        </h3>
-
-        <FeaturedContainer />
+        <Card className="mt-3">
+          <CardHeader>
+            <h3 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase">
+              Featured
+            </h3>
+          </CardHeader>
+          <CardContent>
+            <FeaturedContainer />
+          </CardContent>
+        </Card>
       </section>
 
       <section id="home-right" className="overflow-y-auto overflow-x-hidden w-1/2 no-scrollbar">
