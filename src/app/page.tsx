@@ -3,7 +3,7 @@ import { BackpackIcon, PersonIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import TimelineContainer from "./_components/timeline/container";
-import FeaturedContainer from "./_components/featured-container";
+import FeaturedContainer from "./_components/featured/container";
 import SocialBar from "./_components/social-bar";
 
 export default function Home() {
