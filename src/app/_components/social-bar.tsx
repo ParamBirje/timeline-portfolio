@@ -12,19 +12,19 @@ function SocialBar() {
   const socialLinks = [
     {
       href: "https://linkedin.com/in/parambirje",
-      icon: <LinkedInLogoIcon className="h-6 w-6" />,
+      icon: <LinkedInLogoIcon className="h-6 w-6 hover:scale-105" />,
     },
     {
       href: "https://github.com/parambirje",
-      icon: <GitHubLogoIcon className="h-6 w-6" />,
+      icon: <GitHubLogoIcon className="h-6 w-6 hover:scale-105" />,
     },
     {
       href: "https://x.com/parambirje",
-      icon: <TwitterLogoIcon className="h-6 w-6" />,
+      icon: <TwitterLogoIcon className="h-6 w-6 hover:scale-105" />,
     },
     {
       href: "https://dev.to/parambirje",
-      icon: <DevToIcon className="h-7 w-7" />,
+      icon: <DevToIcon className="h-7 w-7 hover:scale-105" />,
     },
   ];
 
