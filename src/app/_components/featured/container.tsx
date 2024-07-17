@@ -3,11 +3,12 @@
 import FeaturedItem from "./item";
 import { useQuery } from "@apollo/client";
 import gqlQuery from "@/lib/gql-queries";
+import FeaturedItemLoading from "./loading";
 
 function FeaturedContainer() {
   const { loading, error, data } = useQuery(gqlQuery.GET_FEATURED_POSTS);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <FeaturedItemLoading />;
   if (error) return <p>Error :(</p>;
 
   return (
