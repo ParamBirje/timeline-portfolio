@@ -1,32 +1,11 @@
 "use client";
 
+import gqlQuery from "@/lib/gql-queries";
 import TimelineItem from "./item";
-import { useQuery, gql } from "@apollo/client";
-import gqlConfig from "@/lib/gql-config";
-
-const timelinePostsQuery = gql`
-  query Publication {
-    publication(host: "${gqlConfig.host}") {
-      isTeam
-      title
-      series(slug: "${gqlConfig.series}") {
-        posts(first: 10) {
-          edges {
-            node {
-              title
-              coverImage {
-                url
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+import { useQuery } from "@apollo/client";
 
 function TimelineContainer() {
-  const { loading, error, data } = useQuery(timelinePostsQuery);
+  const { loading, error, data } = useQuery(gqlQuery.GET_TIMELINE_POSTS);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
