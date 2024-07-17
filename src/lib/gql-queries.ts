@@ -22,6 +22,27 @@ const gqlQuery = {
       }
     }
   `,
+
+  GET_FEATURED_POSTS: gql`
+  query Publication {
+    publication(host: "${gqlConfig.host}") {
+      isTeam
+      title
+      series(slug: "${gqlConfig.featured}") {
+        posts(first: 3) {
+          edges {
+            node {
+              title
+              coverImage {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`,
 };
 
 export default gqlQuery;

@@ -1,4 +1,4 @@
-export type TimelinePost = {
+export type HashnodePost = {
   title: string;
   coverImage: {
     url: string;

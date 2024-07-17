@@ -1,4 +1,4 @@
-import { type TimelinePost } from "./types";
+import { type HashnodePost } from "../types";
 
 export default function TimelineItem({ post }: TimelineItemProps) {
   return (
@@ -20,5 +20,5 @@ export default function TimelineItem({ post }: TimelineItemProps) {
 }
 
 type TimelineItemProps = {
-  post: TimelinePost;
+  post: HashnodePost;
 };
