@@ -3,11 +3,12 @@
 import gqlQuery from "@/lib/gql-queries";
 import TimelineItem from "./item";
 import { useQuery } from "@apollo/client";
+import TimelineItemLoading from "./loading";
 
 function TimelineContainer() {
   const { loading, error, data } = useQuery(gqlQuery.GET_TIMELINE_POSTS);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <TimelineItemLoading />;
   if (error) return <p>Error :(</p>;
 
   console.log("graphql data here", data.publication.series.posts.edges);
