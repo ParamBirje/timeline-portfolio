@@ -13,6 +13,7 @@ const gqlQuery = {
               node {
                 title
                 url
+                publishedAt
                 coverImage {
                   url
                 }
@@ -35,6 +36,7 @@ const gqlQuery = {
             node {
               title
               url
+              publishedAt
               coverImage {
                 url
               }
