@@ -19,7 +19,7 @@ export default function TimelineItem({ post }: TimelineItemProps) {
           {post.title}
         </h4>
         <p className="text-sm text-muted-foreground">
-          {format(new Date(post.publishedAt), "PPP")}
+          {format(new Date(post.publishedAt), "MMMM, yyyy")}
         </p>
       </div>
     </Link>
