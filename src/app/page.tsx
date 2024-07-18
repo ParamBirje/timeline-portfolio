@@ -28,7 +28,7 @@ export default function Home() {
             </h1>
 
             <Badge className="w-fit" variant="secondary">
-              Something @ SomeCompany.co
+              Software Engineer @ SomeCompany.co
             </Badge>
           </div>
 
@@ -46,7 +46,7 @@ export default function Home() {
 
             <Button variant="secondary" className="w-fit">
               <BackpackIcon className="mr-2 h-4 w-4" />
-              Resume
+              Work
             </Button>
           </div>
 
