@@ -45,7 +45,7 @@ export default function Home() {
 
             <Button variant="secondary" className="w-fit">
               <BackpackIcon className="mr-2 h-4 w-4" />
-              Work
+              Resume
             </Button>
           </div>
 
