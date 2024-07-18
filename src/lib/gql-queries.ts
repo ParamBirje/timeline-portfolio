@@ -5,12 +5,12 @@ const gqlQuery = {
   GET_TIMELINE_POSTS: gql`
     query Publication {
       publication(host: "${gqlConfig.host}") {
-        isTeam
-        title
+        id
         series(slug: "${gqlConfig.series}") {
           posts(first: 10) {
             edges {
               node {
+                id
                 title
                 url
                 publishedAt
@@ -28,12 +28,12 @@ const gqlQuery = {
   GET_FEATURED_POSTS: gql`
   query Publication {
     publication(host: "${gqlConfig.host}") {
-      isTeam
-      title
+      id
       series(slug: "${gqlConfig.featured}") {
         posts(first: 3) {
           edges {
             node {
+              id
               title
               url
               publishedAt
