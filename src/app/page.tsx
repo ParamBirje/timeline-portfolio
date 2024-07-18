@@ -11,31 +11,30 @@ import TimelineContainer from "./_components/timeline/container";
 import FeaturedContainer from "./_components/featured/container";
 import SocialBar from "./_components/social-bar";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { UserProfile as user } from "@/lib/user-config";
 
 export default function Home() {
   return (
     <main className="max-w-[80vw] mx-auto lg:h-screen min-h-screen flex flex-col lg:flex-row gap-10 py-14 px-1 lg:px-5 box-border">
       <section id="home-left" className="w-full lg:w-1/2 flex flex-col gap-5">
         <Avatar className="h-[30vw] w-[30vw] md:h-[15vw] md:w-[15vw] lg:h-[8vw] lg:w-[8vw] rounded-md">
-          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-          <AvatarFallback>CN</AvatarFallback>
+          <AvatarImage src={user.profilePic} alt="profile-pic" />
+          <AvatarFallback>{user.profilePicFallback}</AvatarFallback>
         </Avatar>
 
         <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-2 xl:flex-row xl:items-center xl:gap-5">
             <h1 className="scroll-m-20 text-xl font-bold tracking-tight uppercase">
-              Param Birje
+              {user.name}
             </h1>
 
             <Badge className="w-fit" variant="secondary">
-              Software Engineer @ SomeCompany.co
+              {user.currentStatus}
             </Badge>
           </div>
 
           <p className="leading-7 text-muted-foreground w-full md:w-3/4 lg:w-1/2">
-            Once upon a time, in a far-off land, there was a very lazy king who
-            spent all day lounging on his throne. One day, his advisors came to
-            him with a problem: the kingdom was running out of money.
+            {user.shortAbout}
           </p>
 
           <div className="mt-2 flex items-center gap-3">
