@@ -1,9 +1,12 @@
+import Link from "next/link";
 import { type HashnodePost } from "../types";
 
 export default function TimelineItem({ post }: TimelineItemProps) {
   return (
-    <div
-      className={`cursor-pointer bg-muted rounded-md relative hover:scale-95 duration-200`}
+    <Link
+      target="_blank"
+      href={post.url}
+      className={`bg-muted rounded-md relative hover:scale-95 duration-200`}
     >
       <img
         src={post.coverImage.url}
@@ -15,7 +18,7 @@ export default function TimelineItem({ post }: TimelineItemProps) {
           {post.title}
         </h4>
       </div>
-    </div>
+    </Link>
   );
 }
 

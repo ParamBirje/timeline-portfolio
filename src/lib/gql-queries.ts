@@ -12,6 +12,7 @@ const gqlQuery = {
             edges {
               node {
                 title
+                url
                 coverImage {
                   url
                 }
@@ -33,6 +34,7 @@ const gqlQuery = {
           edges {
             node {
               title
+              url
               coverImage {
                 url
               }

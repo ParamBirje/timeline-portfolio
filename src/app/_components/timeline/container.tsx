@@ -11,8 +11,6 @@ function TimelineContainer() {
   if (loading) return <TimelineItemLoading />;
   if (error) return <p>Error :(</p>;
 
-  console.log("graphql data here", data.publication.series.posts.edges);
-
   return (
     <div
       id="timeline-container"
