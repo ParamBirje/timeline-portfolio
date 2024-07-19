@@ -20,7 +20,7 @@ export default function Home() {
       <section id="home-left" className="w-full lg:w-1/2 flex flex-col gap-5">
         <Avatar className="h-[30vw] w-[30vw] md:h-[15vw] md:w-[15vw] lg:h-[8vw] lg:w-[8vw] rounded-md">
           <AvatarImage src={user.profilePic} alt="profile-pic" />
-          <AvatarFallback>{user.profilePicFallback}</AvatarFallback>
+          <AvatarFallback className="rounded-md">{user.profilePicFallback}</AvatarFallback>
         </Avatar>
 
         <div className="flex flex-col gap-3">
