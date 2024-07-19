@@ -12,6 +12,7 @@ import FeaturedContainer from "./_components/featured/container";
 import SocialBar from "./_components/social-bar";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { UserProfile as user } from "@/lib/user-config";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -38,15 +39,19 @@ export default function Home() {
           </p>
 
           <div className="mt-2 flex items-center gap-3">
-            <Button className="w-fit">
-              <PersonIcon className="mr-2 h-4 w-4" />
-              My Story
-            </Button>
+            <Link target="_blank" href={user.myStory}>
+              <Button className="w-fit">
+                <PersonIcon className="mr-2 h-4 w-4" />
+                My Story
+              </Button>
+            </Link>
 
-            <Button variant="secondary" className="w-fit">
-              <BackpackIcon className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+            <Link target="_blank" href={user.resume}>
+              <Button variant="secondary" className="w-fit">
+                <BackpackIcon className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </Link>
           </div>
 
           <SocialBar />
