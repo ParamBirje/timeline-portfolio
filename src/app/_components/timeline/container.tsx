@@ -21,7 +21,7 @@ function TimelineContainer() {
 
   // if no posts found, but series exists
   if (!data.publication.series.posts.edges.length)
-    return <p className="text-sm text-muted-foreground">No posts yet :(</p>;
+    return <p className="text-sm text-muted-foreground mt-2">No posts yet :(</p>;
 
   return (
     <div
