@@ -8,6 +8,7 @@ import { DevToIcon } from "@/components/ui/icons";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { UserProfile as user } from "@/lib/user-config";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 function SocialBar() {
   const socialLinks = [
@@ -39,11 +40,18 @@ function SocialBar() {
         ))}
       </div>
 
-      <Link href={`mailto:${user.email}`}>
+     <Tooltip delayDuration={100}>
+        <TooltipTrigger asChild>
+        <Link href={`mailto:${user.email}`}>
         <Button variant="secondary" className="h-full w-fit">
           <EnvelopeClosedIcon className="h-5 w-5" />
         </Button>
       </Link>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>Contact me</p>
+        </TooltipContent>
+      </Tooltip>
     </div>
   );
 }

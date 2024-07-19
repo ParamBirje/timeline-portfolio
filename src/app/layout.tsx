@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import ApolloClientProvider from "@/components/providers/apollo-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const monty = Montserrat({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <TooltipProvider>{children}</TooltipProvider>
           </ThemeProvider>
         </ApolloClientProvider>
       </body>
