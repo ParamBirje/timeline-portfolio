@@ -4,11 +4,11 @@ const gqlConfig = {
   // the hashnode blog you want to fetch data from
   host: "parambirje.hashnode.dev",
 
-  // the main timeline series you want to fetch data from
-  series: "timeline",
+  // the main timeline series-slug you want to fetch data from
+  series: "timeline-test",
 
-  // the featured series you want to fetch data from
-  featured: "timeline-featured",
+  // the featured series-slug you want to fetch data from
+  featured: "timeline-featured-test",
 };
 
 export default gqlConfig;
