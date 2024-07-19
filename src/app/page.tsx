@@ -15,7 +15,7 @@ import { UserProfile as user } from "@/lib/user-config";
 
 export default function Home() {
   return (
-    <main className="max-w-[80vw] mx-auto lg:h-screen min-h-screen flex flex-col lg:flex-row gap-10 py-14 px-1 lg:px-5 box-border">
+    <main className="max-w-[80vw] mx-auto lg:h-screen min-h-screen flex flex-col lg:flex-row gap-10 py-10 px-1 lg:px-5 box-border">
       <section id="home-left" className="w-full lg:w-1/2 flex flex-col gap-5">
         <Avatar className="h-[30vw] w-[30vw] md:h-[15vw] md:w-[15vw] lg:h-[8vw] lg:w-[8vw] rounded-md">
           <AvatarImage src={user.profilePic} alt="profile-pic" />
@@ -33,7 +33,7 @@ export default function Home() {
             </Badge>
           </div>
 
-          <p className="leading-7 text-muted-foreground w-full md:w-3/4 lg:w-1/2">
+          <p className="leading-7 text-muted-foreground w-full md:w-3/4">
             {user.shortAbout}
           </p>
 
@@ -66,9 +66,9 @@ export default function Home() {
 
       <section
         id="home-right"
-        className="overflow-y-auto overflow-x-hidden w-full lg:w-1/2 no-scrollbar"
+        className="overflow-y-auto overflow-x-hidden w-full lg:w-1/2"
       >
-        <h3 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl uppercase flex items-start">
+        <h3 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl uppercase flex items-start">
           Timeline <ShuffleIcon className="h-5 w-5 ml-4 mt-1" />
         </h3>
 
