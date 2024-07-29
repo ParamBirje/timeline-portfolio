@@ -5,10 +5,10 @@ const gqlConfig = {
   host: "parambirje.hashnode.dev",
 
   // the main timeline series-slug you want to fetch data from
-  series: "timeline-test",
+  series: "timeline",
 
   // the featured series-slug you want to fetch data from
-  featured: "timeline-featured-test",
+  featured: "featured-timeline",
 };
 
 export default gqlConfig;
