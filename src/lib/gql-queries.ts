@@ -6,8 +6,8 @@ const gqlQuery = {
     query Publication {
       publication(host: "${gqlConfig.host}") {
         id
-        series(slug: "${gqlConfig.series}") {
-          posts(first: 10) {
+        series(slug: "${gqlConfig.series}") {          
+          posts(first: 20) {
             edges {
               node {
                 id
@@ -29,8 +29,8 @@ const gqlQuery = {
   query Publication {
     publication(host: "${gqlConfig.host}") {
       id
-      series(slug: "${gqlConfig.featured}") {
-        posts(first: 3) {
+      series(slug: "${gqlConfig.series}") {
+        posts(first: 5) {
           edges {
             node {
               id

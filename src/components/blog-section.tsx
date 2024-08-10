@@ -4,9 +4,13 @@ import React from "react";
 import { BlogCard } from "./blog-card";
 import { HashnodePost } from "@/lib/types";
 
-export default async function BlogSection() {
+type Props = {
+  isHome?: boolean;
+};
+
+export default async function BlogSection({ isHome }: Props) {
   const { data, loading, error } = await getClient().query({
-    query: gqlQuery.GET_TIMELINE_POSTS,
+    query: isHome ? gqlQuery.GET_FEATURED_POSTS : gqlQuery.GET_TIMELINE_POSTS,
   });
 
   if (loading) return <p>Loading...</p>;

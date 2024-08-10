@@ -1,9 +1,7 @@
-import { BlogCard } from "@/components/blog-card";
 import BlogSection from "@/components/blog-section";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
-import NewsletterSubscribe from "@/components/subscribe";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
@@ -50,7 +48,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="hackathons">
+      <section id="blog">
         <div className="space-y-4 w-full py-6">
           <BlurFade
             className="flex items-center justify-between"
@@ -62,11 +60,8 @@ export default function Page() {
             </Link>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <BlogSection />
+            <BlogSection isHome />
           </BlurFade>
-          {/* <BlurFade delay={BLUR_FADE_DELAY * 8}> */}
-          {/*   <NewsletterSubscribe /> */}
-          {/* </BlurFade> */}
         </div>
       </section>
       <section id="projects">
