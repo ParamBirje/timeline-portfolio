@@ -1,11 +1,11 @@
-import { HackathonCard } from "@/components/hackathon-card";
+import { BlogCard } from "@/components/blog-card";
+import BlogSection from "@/components/blog-section";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { MagicCard } from "@/components/magicui/magic-card";
 import { ProjectCard } from "@/components/project-card";
+import NewsletterSubscribe from "@/components/subscribe";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -62,40 +62,11 @@ export default function Page() {
             </Link>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 7 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
+            <BlogSection />
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 8}>
-            <MagicCard className="shadow-2xl whitespace-nowrap text-4xl py-4 px-4 w-full">
-              <form
-                name="email-form"
-                className="w-full flex items-center gap-5"
-              >
-                <Input
-                  className="flex-grow"
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                />
-                <Button type="submit">Subscribe To Newsletter</Button>
-              </form>
-            </MagicCard>
-          </BlurFade>
+          {/* <BlurFade delay={BLUR_FADE_DELAY * 8}> */}
+          {/*   <NewsletterSubscribe /> */}
+          {/* </BlurFade> */}
         </div>
       </section>
       <section id="projects">

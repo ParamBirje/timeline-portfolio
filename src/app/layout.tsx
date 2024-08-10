@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import ApolloClientProvider from "@/components/providers/apollo-provider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -61,12 +62,14 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <TooltipProvider delayDuration={0}>
-            {children}
-            <Navbar />
-          </TooltipProvider>
-        </ThemeProvider>
+        <ApolloClientProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            <TooltipProvider delayDuration={0}>
+              {children}
+              <Navbar />
+            </TooltipProvider>
+          </ThemeProvider>
+        </ApolloClientProvider>
       </body>
     </html>
   );
