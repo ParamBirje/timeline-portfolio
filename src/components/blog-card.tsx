@@ -7,10 +7,10 @@ interface Props {
   dates: string;
   location?: string;
   image?: string;
-  url: string;
+  slug: string;
 }
 
-export function BlogCard({ title, dates, url, location, image }: Props) {
+export function BlogCard({ title, dates, slug, location, image }: Props) {
   return (
     <li className="relative ml-10 py-4">
       <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
@@ -20,8 +20,7 @@ export function BlogCard({ title, dates, url, location, image }: Props) {
         </Avatar>
       </div>
       <Link
-        target="_blank"
-        href={url}
+        href={`/blog/${slug}`}
         className="flex flex-1 flex-col justify-start gap-1"
       >
         {dates && (

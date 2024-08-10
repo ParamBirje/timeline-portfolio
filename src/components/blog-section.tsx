@@ -42,7 +42,7 @@ export default async function BlogSection({ isHome }: Props) {
             title={post.title}
             dates={post.publishedAt}
             image={post.coverImage.url}
-            url={post.url}
+            slug={post.slug}
           />
         );
       })}

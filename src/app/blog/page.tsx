@@ -1,7 +1,5 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import React from "react";
-import { DATA } from "@/data/resume";
-import { HackathonCard } from "@/components/hackathon-card";
 import NewsletterSubscribe from "@/components/subscribe";
 import BlogSection from "@/components/blog-section";
 
@@ -11,7 +9,7 @@ export default function Page() {
   return (
     <main>
       <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-12 w-full pb-12">
           <BlurFade delay={BLUR_FADE_DELAY * 1}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">

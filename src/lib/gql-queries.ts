@@ -13,6 +13,7 @@ const gqlQuery = {
                 id
                 title
                 url
+                slug
                 publishedAt
                 coverImage {
                   url
@@ -36,6 +37,7 @@ const gqlQuery = {
               id
               title
               url
+              slug
               publishedAt
               coverImage {
                 url
@@ -47,6 +49,27 @@ const gqlQuery = {
     }
   }
 `,
+
+  GET_POST: gql`
+  query Publication($slug: String!) {
+    publication(host: "${gqlConfig.host}") {
+        id
+        post(slug: $slug) {
+            id
+            title
+            coverImage {
+              url
+            }
+            url
+            slug
+            publishedAt
+            content {
+              html
+            }
+        }
+    }
+  }
+  `,
 };
 
 export default gqlQuery;
