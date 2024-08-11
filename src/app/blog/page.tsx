@@ -20,9 +20,9 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  And documenting my journey throughout the process. So
-                  basically you&apos;ll find my experiences, the challenges I
-                  faced, and the solutions I came up with.
+                  And documenting my journey throughout the process. Basically
+                  you&apos;ll find short snippets of my experiences, the
+                  challenges I faced, and the solutions I came up with.
                 </p>
               </div>
             </div>

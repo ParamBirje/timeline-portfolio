@@ -80,9 +80,9 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  I&apos;ve worked on a variety of projects, from websites and
+                  mobile apps to complex monoliths and microservices on the
+                  cloud.
                 </p>
               </div>
             </div>
@@ -102,15 +102,22 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Shoot me{" "}
+                <Link
+                  href={`mailto:${DATA.contact.social.email.url}`}
+                  className="text-blue-500 hover:underline"
+                >
+                  an email
+                </Link>{" "}
+                or a dm{" "}
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
                   on twitter
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I&apos;ll be happy to connect with you and discuss about
+                potential opportunities.
               </p>
             </div>
           </BlurFade>
