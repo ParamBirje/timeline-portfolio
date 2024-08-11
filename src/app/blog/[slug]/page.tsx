@@ -1,6 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
+import PrismLoader from "@/components/prism-loader";
 import NewsletterSubscribe from "@/components/subscribe";
-import { markdownToHTML } from "@/data/blog";
 import { getClient } from "@/lib/apollo-client";
 import gqlQuery from "@/lib/gql-queries";
 import { HashnodePost } from "@/lib/types";
@@ -9,18 +9,17 @@ import { format } from "date-fns";
 const BLUR_FADE_DELAY = 0.04;
 
 export default async function Page({ params }: { params: { slug: string } }) {
-  const { data, loading, error } = await getClient().query({
+  const { data, error } = await getClient().query({
     query: gqlQuery.GET_POST,
     variables: {
       slug: params.slug,
     },
   });
 
-  if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
   const post: HashnodePost = data.publication.post;
-  const content = post.content?.html as string
+  const content = post.content?.html as string;
 
   return (
     <main>
@@ -47,9 +46,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 2.5}>
             <article
-            className="prose dark:prose-invert"
+              className="prose dark:prose-invert"
               dangerouslySetInnerHTML={{ __html: content }}
             ></article>
+            <PrismLoader />
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 1.5}>
             <NewsletterSubscribe />
