@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
-import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
   darkMode: ["class"],
