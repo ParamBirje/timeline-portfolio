@@ -70,6 +70,23 @@ const gqlQuery = {
     }
   }
   `,
+
+  GET_PUBLICATION: gql`
+  query Publication {
+    publication(host: "${gqlConfig.host}") {
+      id
+      title
+    }
+  }
+  `,
+
+  SUBSCRIBE_NEWSLETTER: gql`
+    mutation SubscribeToNewsletter($input: SubscribeToNewsletterInput!) {
+      subscribeToNewsletter(input: $input) {
+        status
+      }
+    }
+  `,
 };
 
 export default gqlQuery;

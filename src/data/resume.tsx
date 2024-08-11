@@ -210,8 +210,8 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
+      title: "Ragic UI",
+      href: "https://ragicui.design",
       dates: "June 2023 - Present",
       active: true,
       description:
