@@ -1,10 +1,11 @@
 import BlogSection from "@/components/blog-section";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ProjectCard } from "@/components/project-card";
+import ProjectSection from "@/components/project-section";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -56,7 +57,10 @@ export default function Page() {
           >
             <h2 className="text-xl font-bold">Timeline</h2>
             <Link href="/blog">
-              <Button size="sm">Discover More</Button>
+              <Button variant="outline" size="sm">
+                Discover More
+                <ArrowRightIcon className="h-4 ml-2" />
+              </Button>
             </Link>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
@@ -83,26 +87,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
-          </div>
+          <ProjectSection isHome />
         </div>
       </section>
 
@@ -122,7 +107,7 @@ export default function Page() {
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  on twitter
                 </Link>{" "}
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.

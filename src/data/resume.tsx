@@ -205,9 +205,9 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+
+      image: "/splunk.svg",
+      video: "",
     },
     {
       title: "Magic UI",
@@ -241,6 +241,39 @@ export const DATA = {
       image: "/splunk.svg",
       video: "",
     },
+    {
+      title: "Magic UI",
+      href: "https://magicui.design",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "Designed, developed and sold animated UI components for developers.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://magicui.design",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/magicuidesign/magicui",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/splunk.svg",
+      video: "",
+    },
+
     {
       title: "llm.report",
       href: "https://llm.report",

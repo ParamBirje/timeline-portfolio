@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import BlurFade from "@/components/magicui/blur-fade";
 import React from "react";
+import ProjectSection from "@/components/project-section";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -71,7 +72,15 @@ export default function Page() {
           ))}
         </div>
       </section>
-      
+      <section id="projects">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Projects</h2>
+          </BlurFade>
+          <ProjectSection />
+        </div>
+      </section>
+
       {/* spacer */}
       <div className="h-10 md:h-0"></div>
     </main>
