@@ -34,7 +34,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               <Link href="/blog">
                 <Button variant="ghost">
                   <ArrowLeftIcon className="h-4 mr-2" />
-                  back to blog
+                  back to timeline
                 </Button>
               </Link>
             </BlurFade>
@@ -71,7 +71,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               <Link href="/blog">
                 <Button variant="ghost">
                   <ArrowLeftIcon className="h-4 mr-2" />
-                  back to blog
+                  back to timeline
                 </Button>
               </Link>
             </BlurFade>
