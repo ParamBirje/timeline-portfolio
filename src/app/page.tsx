@@ -104,7 +104,7 @@ export default function Page() {
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Shoot me{" "}
                 <Link
-                  href={`mailto:${DATA.contact.social.email.url}`}
+                  href={`mailto:${DATA.contact.email}`}
                   className="text-blue-500 hover:underline"
                 >
                   an email

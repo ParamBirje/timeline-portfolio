@@ -79,6 +79,10 @@ export default function NewsletterSubscribe() {
       className="shadow-2xl whitespace-nowrap text-4xl py-4 px-4 w-full"
       gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
     >
+      <p className="text-sm font-bold ml-1 mb-3 text-muted-foreground">
+        Get <span className="text-secondary-foreground">notified</span> when I
+        post!
+      </p>
       <form
         ref={form}
         onSubmit={handleSubmit}
@@ -93,7 +97,7 @@ export default function NewsletterSubscribe() {
           placeholder="Enter your email"
         />
         <Button disabled={loading} type="submit">
-          {loading ? "Subscribing..." : "Subscribe To Newsletter"}
+          {loading ? "Subscribing..." : "Subscribe"}
         </Button>
       </form>
     </MagicCard>
