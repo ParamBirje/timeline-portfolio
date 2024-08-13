@@ -257,6 +257,7 @@ export const DATA = {
         {
           type: "Devpost",
           href: "https://devpost.com/software/noburncloud",
+          icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/noburncloud-banner.webp",
