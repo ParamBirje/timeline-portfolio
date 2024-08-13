@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { HomeIcon, NotebookIcon, BriefcaseBusinessIcon } from "lucide-react";
 
 export const DATA = {
@@ -149,157 +150,168 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Turbomarks",
+      href: "",
+      dates: "July 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "An open-source browser extension that helps you organize your commonly accessed links and access them faster by using VIM-like shorthands than using your mouse.",
       technologies: [
-        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Javascript",
+        "Background Workers",
+        "Open Source",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/parambirje/turbomarks",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/turbomarks-logo.jpg",
+      video: "",
+    },
+    {
+      title: "AutoSSLx",
+      href: "https://github.com/parambirje/auto-sslx",
+      dates: "July 2024",
+      active: true,
+      description:
+        "An open-source bash CLI tool to ease your NGINX and SSL workflows by exposing your web service, making it secure, reverse-proxying to the internet, all with a single command.",
+      technologies: ["Bash", "Open Source", "NGINX"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/parambirje/auto-sslx",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/auto-sslx.jpg",
+      video: "",
+    },
+    {
+      title: "MajorLaw",
+      href: "https://majorlaw.parameater.co/",
+      dates: "June 2024",
+      active: true,
+      description:
+        "Developed an AI-powered legal research tool that helps legal personnel find laws and statutes faster than ever before.",
+      technologies: [
+        "React",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Generative AI",
+        "Python",
+        "FastAPI",
+        "AWS",
+        "Amazon Bedrock",
+        "DynamoDB NoSQL",
+        "Node.js",
+        "NGINX",
+        "Docker",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://majorlaw.parameater.co/",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Blog",
+          href: "/blog/ai-and-web-crawling",
+          icon: <NotebookIcon className="size-3" />,
+        },
+      ],
+      image: "/majorlaw-banner.png",
+      video: "",
+    },
+    {
+      title: "NoBurnCloud",
+      href: "https://noburncloud.parameater.co/",
+      dates: "April 2024",
+      active: true,
+      description:
+        "Simulate and test your cloud architectures before you spend a dime. Build better products with controlled costs and cloud deployments that withstand the test of time.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "AWS",
+        "Docker",
+        "Node.js",
+        "Express.js",
+        "Websockets",
+        "NGINX",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://noburncloud.parameater.co/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/parambirje/noburncloud",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Devpost",
+          href: "https://devpost.com/software/noburncloud",
+        },
+      ],
+      image: "/noburncloud-banner.webp",
+      video: "",
+    },
+    {
+      title: "Parable Rhythm",
+      href: "https://parablerhythm.parameater.co/",
+      dates: "",
+      active: true,
+      description:
+        "An interactive crime thriller RPG powered by Generative A.I that provides you a unique experience of solving cases and driving the story forward. Every action/approach will truly result in an unexpected pattern of events.",
+      technologies: [
+        "Amazon Partyrock",
+        "Generative AI",
+        "LLMs",
+        "Cohere Command",
+        "Llama",
+        "Claude 3.1",
+        "React",
+        "Typescript",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://parablerhythm.parameater.co/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/parambirje/parable-rhythm-site",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/parable-rhythm-banner.webp",
+      video: "",
+    },
+    {
+      title: "SYKO",
+      href: "#",
+      dates: "",
+      active: true,
+      description:
+        "Developed a website and managed deployment on AWS for a street-wear clothing brand that fuses traditional aesthetics with the pulse of India's diverse culture, streets, reflecting the dynamic energy of its cities.",
+      technologies: ["AWS Cloud", "Lightsail", "Cloudfront", "Wordpress"],
+      links: [
+        {
+          type: "Socials",
+          href: "https://www.instagram.com/thesyko.in/",
+          icon: <InstagramLogoIcon className="size-3" />,
         },
       ],
 
-      image: "/splunk.svg",
-      video: "",
-    },
-    {
-      title: "Ragic UI",
-      href: "https://ragicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/splunk.svg",
-      video: "",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/splunk.svg",
-      video: "",
-    },
-
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/splunk.svg",
-      video: "",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/splunk.svg",
+      image: "/syko-banner.webp",
       video: "",
     },
   ],
