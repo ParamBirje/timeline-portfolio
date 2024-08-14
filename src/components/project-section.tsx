@@ -10,25 +10,31 @@ type Props = {
 };
 
 export default function ProjectSection({ isHome }: Props) {
-  const projects = isHome ? DATA.projects.slice(0, 4) : DATA.projects;
+  let projects = DATA.projects.filter((project) => project.active);
+  projects = isHome ? projects.slice(0, 4) : projects;
 
   return (
     <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-      {projects.map((project, id) => (
-        <BlurFade key={project.title} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-          <ProjectCard
-            href={project.href}
+      {projects.map((project, id) => {
+        return (
+          <BlurFade
             key={project.title}
-            title={project.title}
-            description={project.description}
-            dates={project.dates}
-            tags={project.technologies}
-            image={project.image}
-            video={project.video}
-            links={project.links}
-          />
-        </BlurFade>
-      ))}
+            delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+          >
+            <ProjectCard
+              href={project.href}
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              dates={project.dates}
+              tags={project.technologies}
+              image={project.image}
+              video={project.video}
+              links={project.links}
+            />
+          </BlurFade>
+        );
+      })}
     </div>
   );
 }
