@@ -153,7 +153,7 @@ export const DATA = {
       title: "Turbomarks",
       href: "",
       dates: "July 2024",
-      active: true,
+      active: false,
       description:
         "An open-source browser extension that helps you organize your commonly accessed links and access them faster by using VIM-like shorthands than using your mouse.",
       technologies: [
@@ -180,7 +180,7 @@ export const DATA = {
       active: true,
       description:
         "An open-source bash CLI tool to ease your NGINX and SSL workflows by exposing your web service, making it secure, reverse-proxying to the internet, all with a single command.",
-      technologies: ["Bash", "Open Source", "NGINX"],
+      technologies: ["Open Source", "Bash", "NGINX"],
       links: [
         {
           type: "Source",
@@ -217,11 +217,6 @@ export const DATA = {
           href: "https://majorlaw.parameater.co/",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Blog",
-          href: "/blog/ai-and-web-crawling",
-          icon: <NotebookIcon className="size-3" />,
-        },
       ],
       image: "/majorlaw-banner.png",
       video: "",
@@ -237,6 +232,8 @@ export const DATA = {
         "Next.js",
         "Typescript",
         "AWS",
+        "Generative AI",
+        "Google Gemini",
         "Docker",
         "Node.js",
         "Express.js",
