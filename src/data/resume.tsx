@@ -290,7 +290,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/parable-rhythm-banner.webp",
+      image: "/parable-rhythm-banner.gif",
       video: "",
     },
     {
