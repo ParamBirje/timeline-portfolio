@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "Software Engineer with a genuine passion for solving problems using tech and curiosity.",
   summary:
-    "Been hitting semicolons since 7th grade, and have fallen in love building software with the big toy (computer). Have built mobile apps and websites over the cloud that scaled over hundreds of users [for various startups](/work) and for the ones I co-founded. I love contributing to open source software and also have my own OSS [projects](/#projects). Cracked the AWS Solutions Architect Associate cert in a month, won three prizes at the [first hackathon I participated in](https://parablerhythm.parameater.co/) (Generative A.I), built roblox games with over 500K player visits (guess that makes me an award winning game-dev too). Oh yes, I'm also a [computer science student.](/work#education)",
+    "Been hitting semicolons since 7th grade, and have fallen in love building software with the big toy (computer). Have built mobile apps and websites over the cloud that scaled over hundreds of users [for various startups](/work) and for the ones I co-founded. I love contributing to open source software and also have my own OSS [projects](/#projects). Cracked the AWS Solutions Architect Associate cert in a month, won [three prizes at the first hackathon](https://parablerhythm.parameater.co/) I participated in (Generative A.I), built roblox games with over 500K player visits (guess that makes me an award winning game-dev too). Oh yes, I'm also a [computer science student.](/work#education)",
   avatarUrl:
     "https://pbs.twimg.com/profile_images/1813248326524862464/_1ZZd4EQ_400x400.jpg",
   skills: [
