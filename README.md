@@ -1,47 +1,50 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Timeline Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), forked from [dillionverma/portfolio](https://github.com/dillionverma/portfolio).
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+### Motivation
+
+I had been developing my third portfolio design (yes, the prev 2 were over-designed) named exactly `timeline-portfolio` (still on branch _main_) who's core idea was to showcase my dev journey and was centered around the Hashnode blog. Designing is fun; developing it from scratch is tedious and time-taking as everytime I start developing my portfolio I put it as last priority (with other apps on top).
+
+I'm glad I found MagicUI and it's free portfolio template, it was made with the same design tastes I have (as of now) - classy and minimal. No brainer for me, snagged it right away and integrated my prev design's Hashnode logic into it. Finally the personal site is ready (that too in 2 days).
 
 # Features
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- ⌛ Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
+- 💪 Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
+
+- ✨ Includes Hashnode blog integration (with newsletter subscription!)
+- 📱 Responsive for different devices
+- 🚀 Optimized for Next.js
 
 # Getting Started Locally
 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/dillionverma/portfolio
+   git clone https://github.com/parambirje/timeline-portfolio
    ```
 
 2. Move to the cloned directory
 
    ```bash
-   cd portfolio
+   cd timeline-portfolio
    ```
 
 3. Install dependencies:
 
    ```bash
-   pnpm install
+   npm install
    ```
 
 4. Start the local Server:
 
    ```bash
-   pnpm dev
+   npm dev
    ```
 
 5. Open the [Config file](./src/data/resume.tsx) and make changes
 
 # License
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/parambirje/timeline-portfolio/blob/v2/LICENSE.md).
