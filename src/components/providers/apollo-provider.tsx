@@ -1,10 +1,10 @@
 "use client";
 
-import gqlConfig from "@/lib/gql-config";
+import { DATA } from "@/data/resume";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const apolloClient = new ApolloClient({
-  uri: gqlConfig.domain,
+  uri: DATA.gqlConfig.domain,
   cache: new InMemoryCache(),
 });
 

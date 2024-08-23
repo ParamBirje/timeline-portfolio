@@ -1,12 +1,12 @@
 import { gql } from "@apollo/client";
-import gqlConfig from "@/lib/gql-config";
+import { DATA } from "@/data/resume";
 
 const gqlQuery = {
   GET_TIMELINE_POSTS: gql`
     query Publication {
-      publication(host: "${gqlConfig.host}") {
+      publication(host: "${DATA.gqlConfig.host}") {
         id
-        series(slug: "${gqlConfig.series}") {          
+        series(slug: "${DATA.gqlConfig.series}") {          
           posts(first: 20) {
             edges {
               node {
@@ -28,9 +28,9 @@ const gqlQuery = {
 
   GET_FEATURED_POSTS: gql`
   query Publication {
-    publication(host: "${gqlConfig.host}") {
+    publication(host: "${DATA.gqlConfig.host}") {
       id
-      series(slug: "${gqlConfig.series}") {
+      series(slug: "${DATA.gqlConfig.series}") {
         posts(first: 5) {
           edges {
             node {
@@ -52,7 +52,7 @@ const gqlQuery = {
 
   GET_POST: gql`
   query Publication($slug: String!) {
-    publication(host: "${gqlConfig.host}") {
+    publication(host: "${DATA.gqlConfig.host}") {
         id
         post(slug: $slug) {
             id
@@ -73,7 +73,7 @@ const gqlQuery = {
 
   GET_PUBLICATION: gql`
   query Publication {
-    publication(host: "${gqlConfig.host}") {
+    publication(host: "${DATA.gqlConfig.host}") {
       id
       title
     }
