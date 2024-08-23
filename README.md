@@ -13,7 +13,7 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 
 ## Motivation
 
-I had been developing my third portfolio design (yes, the prev 2 were over-designed) named exactly `timeline-portfolio` (still on branch _main_) who's core idea was to showcase my dev journey and was centered around the Hashnode blog. Designing is fun; developing it from scratch is tedious and time-taking as everytime I start developing my portfolio I put it as last priority (with other apps on top).
+I had been developing my third portfolio design (yes, the prev 2 were over-designed) named exactly `timeline-portfolio` (still on branch _main_) who's core idea was to showcase my dev journey (projects, learnings, experiences, tech, etc.) and was centered around the Hashnode blog. Designing is fun; developing it from scratch is tedious and time-taking as everytime I start developing my portfolio I put it as last priority (with other apps on top).
 
 I'm glad I found MagicUI and it's free portfolio template, it was made with the same design tastes I have (as of now) - classy and minimal. No brainer for me, snagged it right away and integrated my prev design's Hashnode logic into it. Finally the personal site is ready (that too in 2 days).
 
