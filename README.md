@@ -5,7 +5,7 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 ## Features
 
 - ⌛ Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- 💪 Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
+- 💪 Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI, Aceternity UI
 
 - ✨ Includes Hashnode blog integration (with newsletter subscription!)
 - 📱 Responsive for different devices
@@ -19,31 +19,32 @@ I'm glad I found MagicUI and it's free portfolio template, it was made with the 
 
 # Getting Started Locally
 
-1. Clone this repository to your local machine:
+1. Fork this repository or use it as a template.
+2. Clone the forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/parambirje/timeline-portfolio
+   git clone https://github.com/<USERNAME>/timeline-portfolio
    ```
 
-2. Move to the cloned directory
+3. Move to the cloned directory:
 
    ```bash
    cd timeline-portfolio
    ```
 
-3. Install dependencies:
+4. Install dependencies:
 
    ```bash
    npm install
    ```
 
-4. Start the local Server:
+5. Start the local Server:
 
    ```bash
    npm dev
    ```
 
-5. Open the [Config file -> resume.tsx](./src/data/resume.tsx) and make changes
+6. Open the [Config file -> resume.tsx](./src/data/resume.tsx) and make changes.
 
 # License
 
