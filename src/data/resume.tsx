@@ -151,19 +151,24 @@ export const DATA = {
   projects: [
     {
       title: "Turbomarks",
-      href: "",
-      dates: "July 2024",
-      active: false,
+      href: "https://turbomarks.parameater.co/",
+      dates: "August 2024",
+      active: true,
       description:
-        "An open-source browser extension that helps you organize your commonly accessed links and access them faster by using VIM-like shorthands than using your mouse.",
+        "An open-source browser extension to access frequent links at lightning fast speeds by using VIM-like shorthands than using your mouse.",
       technologies: [
+        "Open Source",
         "HTML5",
         "CSS3",
         "Javascript",
         "Background Workers",
-        "Open Source",
       ],
       links: [
+        {
+          type: "Website",
+          href: "https://turbomarks.parameater.co/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "Source",
           href: "https://github.com/parambirje/turbomarks",
@@ -263,7 +268,7 @@ export const DATA = {
     {
       title: "Parable Rhythm",
       href: "https://parablerhythm.parameater.co/",
-      dates: "",
+      dates: "March 2024",
       active: true,
       description:
         "An interactive crime thriller RPG powered by Generative A.I that provides you a unique experience of solving cases and driving the story forward. Every action/approach will truly result in an unexpected pattern of events.",
