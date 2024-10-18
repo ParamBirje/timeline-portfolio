@@ -80,6 +80,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Unlead AI",
+      badges: [],
+      href: "https://unlead.ai",
+      location: "Singapore - Remote",
+      title: "A.I Engineer",
+      logoUrl:
+        "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6b204a7e61f50afc939cf95f2a480996/unlead-ai.jpg",
+      start: "Aug 2024",
+      end: "Present",
+      description: "",
+    },
+    {
       company: "Wootag",
       badges: [],
       href: "https://wootag.com",
