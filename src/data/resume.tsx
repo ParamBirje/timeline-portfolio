@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "Software Engineer with a genuine passion for solving problems using tech and curiosity.",
   summary:
-    "Been hitting semicolons since 7th grade, and have fallen in love building software with the big toy (computer). Have built mobile apps and websites over the cloud that scaled over hundreds of users [for various startups](/work) and for the ones I co-founded. I love contributing to open source software and also have my own OSS [projects](/#projects). Cracked the AWS Solutions Architect Associate cert in a month, won [three prizes at the first hackathon](https://parablerhythm.parameater.co/) I participated in (Generative A.I), built roblox games with over 500K player visits (guess that makes me an award winning game-dev too). Oh yes, I'm also a [computer science student.](/work#education)",
+    "Been hitting semicolons since 7th grade, and have fallen in love building software with the big toy (computer). Have built mobile apps and websites over the cloud that scaled over hundreds of users [for various startups](/work) and for the ones I co-founded. I love contributing to open source software and also have my own OSS [projects](/#projects). Cracked the AWS Solutions Architect Associate cert in a month, won [three prizes at the first hackathon](https://parablerhythm.parambirje.com/) I participated in (Generative A.I), built roblox games with over 500K player visits (guess that makes me an award winning game-dev too). Oh yes, I'm also a [computer science student.](/work#education)",
   avatarUrl:
     "https://pbs.twimg.com/profile_images/1813248326524862464/_1ZZd4EQ_400x400.jpg",
   skills: [
@@ -162,8 +162,26 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "ZeroPlay",
+      href: "https://zeroplay.parambirje.com/",
+      dates: "December 2024",
+      active: true,
+      description:
+        "Inspired by OperaGX's native home page, ZeroPlay is hub for all the AAA & indie free games on Epic Games Store, Steam, and other platforms. Designed to be the home page of any browser.",
+      technologies: ["Remix", "React", "Typescript", "Node.js", "TailwindCSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://zeroplay.parambirje.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/zeroplay-logo.jpg",
+      video: "",
+    },
+    {
       title: "Turbomarks",
-      href: "https://turbomarks.parameater.co/",
+      href: "https://turbomarks.parambirje.com/",
       dates: "August 2024",
       active: true,
       description:
@@ -178,7 +196,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://turbomarks.parameater.co/",
+          href: "https://turbomarks.parambirje.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -210,7 +228,7 @@ export const DATA = {
     },
     {
       title: "MajorLaw",
-      href: "https://majorlaw.parameater.co/",
+      href: "https://majorlaw.parambirje.com/",
       dates: "June 2024",
       active: true,
       description:
@@ -231,7 +249,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://majorlaw.parameater.co/",
+          href: "https://majorlaw.parambirje.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -240,7 +258,7 @@ export const DATA = {
     },
     {
       title: "NoBurnCloud",
-      href: "https://noburncloud.parameater.co/",
+      href: "https://noburncloud.parambirje.com/",
       dates: "April 2024",
       active: true,
       description:
@@ -260,7 +278,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://noburncloud.parameater.co/",
+          href: "https://noburncloud.parambirje.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -279,7 +297,7 @@ export const DATA = {
     },
     {
       title: "Parable Rhythm",
-      href: "https://parablerhythm.parameater.co/",
+      href: "https://parablerhythm.parambirje.com/",
       dates: "March 2024",
       active: true,
       description:
@@ -298,7 +316,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://parablerhythm.parameater.co/",
+          href: "https://parablerhythm.parambirje.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
