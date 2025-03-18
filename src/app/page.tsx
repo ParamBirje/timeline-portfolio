@@ -1,5 +1,4 @@
 import BlogSection from "@/components/blog-section";
-import LampShade from "@/components/lamp-shade";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import ProjectSection from "@/components/project-section";
