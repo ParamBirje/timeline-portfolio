@@ -162,13 +162,77 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "rekursive",
+      href: "https://rekursive.parambirje.com/",
+      dates: "March 2025",
+      active: true,
+      description:
+        "Repurpose your content from a YouTube video, blogs, etc. or improve posts for X/Twitter or LinkedIn, it's that simple.",
+      technologies: [
+        "Remix",
+        "React",
+        "Typescript",
+        "Node.js",
+        "Google Gemini",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Drizzle",
+        "Supabase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://rekursive.parambirje.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/rekursive-logo.png",
+      video: "",
+    },
+    {
+      title: "LingoPilot",
+      href: "https://lingopilot.parambirje.com/",
+      dates: "January 2025",
+      active: true,
+      description:
+        "Engineered a custom voice engine for an A.I language learning conversation app to practice speaking your desired language wherever and whenever you want!",
+      technologies: [
+        "Remix",
+        "Next.js",
+        "React",
+        "Typescript",
+        "FastAPI",
+        "Python",
+        "Meta Llama 70B",
+        "TailwindCSS",
+        "PostgreSQL",
+        "Supabase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://lingopilot.parambirje.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/lingopilot-logo.png",
+      video: "",
+    },
+    {
       title: "ZeroPlay",
       href: "https://zeroplay.parambirje.com/",
       dates: "December 2024",
       active: true,
       description:
-        "Inspired by OperaGX's native home page, ZeroPlay is hub for all the AAA & indie free games on Epic Games Store, Steam, and other platforms. Designed to be the home page of any browser.",
-      technologies: ["Remix", "React", "Typescript", "Node.js", "TailwindCSS"],
+        "Inspired by OperaGX's native home page, ZeroPlay is hub for all the AAA & indie games that are free for a limited time on Epic Games Store, Steam, and other platforms. Designed to be the home page of any browser.",
+      technologies: [
+        "Remix",
+        "React",
+        "Typescript",
+        "Node.js",
+        "TailwindCSS",
+        "Open Source",
+      ],
       links: [
         {
           type: "Website",

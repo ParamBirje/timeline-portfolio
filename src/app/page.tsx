@@ -1,4 +1,5 @@
 import BlogSection from "@/components/blog-section";
+import LampShade from "@/components/lamp-shade";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import ProjectSection from "@/components/project-section";
@@ -69,7 +70,7 @@ export default function Page() {
         </div>
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="flex flex-col gap-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -88,6 +89,9 @@ export default function Page() {
             </div>
           </BlurFade>
           <ProjectSection isHome />
+          <Button variant="outline" size="sm" className="w-fit mx-auto">
+            <Link href="/work#projects">View All Projects</Link>
+          </Button>
         </div>
       </section>
 
