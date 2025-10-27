@@ -15,13 +15,13 @@ export const DATA = {
   avatarUrl:
     "https://pbs.twimg.com/profile_images/1813248326524862464/_1ZZd4EQ_400x400.jpg",
   skills: [
+    "Generative AI",
+    "AI Agents",
     "Typescript",
     "Javascript",
     "Python",
-    "Go",
     "AWS Cloud",
     "Solutions Architect",
-    "Generative AI",
     "React",
     "Next.js",
     "Node.js",
@@ -33,6 +33,7 @@ export const DATA = {
     "UI/UX Design",
     "NGINX",
     "Docker",
+    "N8N",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -80,16 +81,39 @@ export const DATA = {
 
   work: [
     {
+      company: "Vsynergize AI",
+      badges: ["A.I Architect", "Product Owner"],
+      href: "https://vsynergize.ai",
+      location: "Pune, India - Hybrid",
+      title: "A.I Engineer",
+      logoUrl:
+        "https://media.licdn.com/dms/image/v2/D4D0BAQEEKNY8t67Hcw/company-logo_200_200/company-logo_200_200/0/1715841492143/vsynergize_outsourcing_logo?e=2147483647&v=beta&t=TpJstVeuhQ8ZFvALQX96FOSs6mqxZsNkKsxyVxtrdhQ",
+      start: "May 2025",
+      end: "Oct 2025",
+      description: `
+      Architected and led the end-to-end development of a voice and text-based conversational AI product, designing a highly scalable, microservices-based system on AWS.
+       Achieved an 80% reduction in infrastructure costs by strategically selecting serverless technologies (AWS Lambda) and leveraging cutting-edge agentic frameworks (OpenAI and Strands SDKs).
+       Designed CI/CD pipelines that improved deployment times by 90% and engineered a resilient production environment, ensuring zero downtime for all updates.
+       Translated high-level business requirements into technical specifications, acting as the key link between management and a 10-person cross-functional team (backend, frontend, AI, QA, DevOps).
+       Increased team efficiency by 60% by optimizing workflows through AI and aligning responsibilities with individual strengths.
+       Designed the AI product's end-to-end UX (making it invisible), simplifying a complex system and collaborating with sales and marketing teams to effectively showcase the product.
+       Developed AI agents for conversational AI and analysis with upto 95% accuracy along with REST API microservices. 
+      `,
+    },
+    {
       company: "Unlead AI",
-      badges: [],
+      badges: ["Feature Owner"],
       href: "https://unlead.ai",
       location: "Singapore - Remote",
       title: "A.I Engineer",
       logoUrl:
         "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_6b204a7e61f50afc939cf95f2a480996/unlead-ai.jpg",
       start: "Aug 2024",
-      end: "Present",
-      description: "",
+      end: "April 2025",
+      description: `
+      Leading the development of A.I agents, backend and frontend modules (lipsync, voice cloning) using open source ML models for new features using Python, SpringBoot (Java), Docker and React (Next.js).
+      Identified and automated video generation workflows, reducing times by 90% from days to a couple of minutes.
+      Leading the development of the main landing website while collaborating with designing, management, and sales teams.`,
     },
     {
       company: "Wootag",
@@ -101,7 +125,10 @@ export const DATA = {
         "https://media.licdn.com/dms/image/C4E0BAQF-GhQrnKxxmg/company-logo_200_200/0/1641194075100/wootag_logo?e=2147483647&v=beta&t=HCTlRCdd-HUUlHbMqWV9tdxVCaOjE3TITctC7ldlTrY",
       start: "July 2024",
       end: "Present",
-      description: "",
+      description: `
+      Developed a parallel - distributed architecture for video rendering on AWS Lambda using Typescript - Node.js (Nest.js) that increased processing times by 9x times in the first few weeks of joining.
+      Working with customer success, sales, engineering teams on client deliverables and A.I / dev tools that improve workflow times by 80% (days to hours).
+      `,
     },
     {
       company: "SYKO Merch",
