@@ -178,6 +178,15 @@ export const DATA = {
       end: "2025",
     },
     {
+      school: "AWS Certified Machine Learning Engineer Associate",
+      href: "https://www.credly.com/badges/7ef6b0f0-2424-4f9d-9951-83413f8ac6d9/public_url",
+      degree: "Amazon Web Services",
+      logoUrl:
+        "https://images.credly.com/size/680x680/images/1a634b4e-3d6b-4a74-b118-c0dcb429e8d2/image.png",
+      start: "2026",
+      end: "present",
+    },
+    {
       school: "AWS Certified Solutions Architect Associate",
       href: "https://www.credly.com/badges/fdcc8e57-5acd-46e4-80aa-35c8f337f956/linked_in_profile",
       degree: "Amazon Web Services",
