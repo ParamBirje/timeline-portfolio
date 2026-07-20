@@ -5,6 +5,7 @@ import ProjectSection from "@/components/project-section";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
+import { FEATURES } from "@/lib/feature-flags";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -49,25 +50,27 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="blog">
-        <div className="space-y-4 w-full py-6">
-          <BlurFade
-            className="flex items-center justify-between"
-            delay={BLUR_FADE_DELAY * 5}
-          >
-            <h2 className="text-xl font-bold">Timeline</h2>
-            <Link href="/blog">
-              <Button variant="outline" size="sm">
-                Discover More
-                <ArrowRightIcon className="h-4 ml-2" />
-              </Button>
-            </Link>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <BlogSection isHome />
-          </BlurFade>
-        </div>
-      </section>
+      {FEATURES.blog && (
+        <section id="blog">
+          <div className="space-y-4 w-full py-6">
+            <BlurFade
+              className="flex items-center justify-between"
+              delay={BLUR_FADE_DELAY * 5}
+            >
+              <h2 className="text-xl font-bold">Timeline</h2>
+              <Link href="/blog">
+                <Button variant="outline" size="sm">
+                  Discover More
+                  <ArrowRightIcon className="h-4 ml-2" />
+                </Button>
+              </Link>
+            </BlurFade>
+            <BlurFade delay={BLUR_FADE_DELAY * 6}>
+              <BlogSection isHome />
+            </BlurFade>
+          </div>
+        </section>
+      )}
       <section id="projects">
         <div className="flex flex-col gap-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>

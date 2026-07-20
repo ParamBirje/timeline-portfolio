@@ -7,7 +7,7 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 - ⌛ Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
 - 💪 Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI, Aceternity UI
 
-- ✨ Includes Hashnode blog integration (with newsletter subscription!)
+- ✨ Includes Hashnode blog integration (currently soft-deprecated/disabled by feature flag)
 - 📱 Responsive for different devices
 - 🚀 Optimized for Next.js
 

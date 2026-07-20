@@ -2,10 +2,16 @@ import BlurFade from "@/components/magicui/blur-fade";
 import React from "react";
 import NewsletterSubscribe from "@/components/subscribe";
 import BlogSection from "@/components/blog-section";
+import { FEATURES } from "@/lib/feature-flags";
+import { notFound } from "next/navigation";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  if (!FEATURES.blog) {
+    notFound();
+  }
+
   return (
     <main>
       <section id="hackathons">

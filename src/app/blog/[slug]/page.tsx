@@ -9,10 +9,16 @@ import { HashnodePost } from "@/lib/types";
 import { format } from "date-fns";
 import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { FEATURES } from "@/lib/feature-flags";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (!FEATURES.blog) {
+    notFound();
+  }
+
   const { data, error } = await getClient().query({
     query: gqlQuery.GET_POST,
     variables: {
