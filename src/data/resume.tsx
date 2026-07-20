@@ -82,6 +82,32 @@ export const DATA = {
   work: [
     {
       company: "Vsynergize AI",
+      badges: ["Solutions Architect", "Product Lead"],
+      href: "https://vsynergize.ai",
+      location: "Pune, India",
+      title: "Senior A.I Engineer",
+      logoUrl:
+        "https://media.licdn.com/dms/image/v2/D4D0BAQEEKNY8t67Hcw/company-logo_200_200/company-logo_200_200/0/1715841492143/vsynergize_outsourcing_logo?e=2147483647&v=beta&t=TpJstVeuhQ8ZFvALQX96FOSs6mqxZsNkKsxyVxtrdhQ",
+      start: "Apr 2025",
+      end: "Present",
+      description: ``,
+    },
+    {
+      company: "Vsynergize AI",
+      badges: [],
+      href: "https://vsynergize.ai",
+      location: "Freelance - Remote",
+      title: "A.I Consultant",
+      logoUrl:
+        "https://media.licdn.com/dms/image/v2/D4D0BAQEEKNY8t67Hcw/company-logo_200_200/company-logo_200_200/0/1715841492143/vsynergize_outsourcing_logo?e=2147483647&v=beta&t=TpJstVeuhQ8ZFvALQX96FOSs6mqxZsNkKsxyVxtrdhQ",
+      start: "Nov 2025",
+      end: "Apr 2026",
+      description: `
+      Consulting on AI agents, optimizing cloud architecture, software architecture, etc.
+      `,
+    },
+    {
+      company: "Vsynergize AI",
       badges: ["A.I Architect", "Product Owner"],
       href: "https://vsynergize.ai",
       location: "Pune, India - Hybrid",
